@@ -2,4 +2,83 @@
 
 /* 回答はここに書いてね */
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.text {
+  width: 205px;
+}
+
+.q7_float {
+  width: 205px; /* floatを適用するためにwidth指定する必要がある */
+  float: left;
+  margin-left: 50px;
+}
+
+.q7_float:first-child {
+  margin-left: 0;
+}
+
+.table_container {
+  display: table;
+}
+
+.table_element {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.table_element:last-child {
+  margin-left: 0 -50px;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 -4px;
+  /* inline-blockでできる隙間を消す */
+  margin-left: 50px;
+}
+
+.inline:first-child {
+  margin-left: 0;
+}
+
+.flex_box {
+  display: flex;
+  justify-content: space-around;
+  align-items:flex-end;
+}
+
+.full_size {
+  letter-spacing: -1em;
+   /* 自動で付いてしまうdiv同士の空白を詰める */
+  white-space: nowrap; 
+  /* 自動で折り返ししない */
+}
+
+.inline_margin {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: normal;
+  /* 文字間を元に戻す */
+  white-space: normal;
+  /* 自動折り返しも元に戻す */
+}
+
+.q7_left {
+  width: 300px;
+}
+
+.q7_right {
+  width: calc(100% - 350px);
+  margin-left: -300px;
+   /* ネガティブマージン */
+  padding-left: 350px;
+}
+
 /* 回答はここに書いてね */

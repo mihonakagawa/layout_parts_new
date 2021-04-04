@@ -1,11 +1,6 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-/* .clearfix:after {
-  display: block;
-  content: "";
-  clear: both;
-} */
 
 .q6_text {
   text-align: center; 
@@ -17,14 +12,13 @@
   display: inline-block;
   padding: 10px 0;
 }
+
 .text_margin {
   background-color: #e6f2ff;
   width: 90px;
   text-align: center;
   margin: 0 auto;
   padding: 10px 0;
-
-
 }
 /* _____________________________________________________________ */
 
