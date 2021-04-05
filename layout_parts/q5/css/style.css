@@ -25,41 +25,48 @@
   top: 40px;
   left: 200px;
 }
+
 .two {
   background-color: #7084de;
   top: 120px;
   left: 280px;
 }
+
 .three {
   background-color: #d0ecea;
   top: 200px;
   left: 360px;
   z-index: 1;
 }
+
 .four {
   background-color: #8b7a5e;
   top: 280px;
   left: 280px;
   z-index: 2;
 }
+
 .five {
   background-color: #9fd6d2;
   top: 360px;
   left: 200px;
   z-index: 3;
 }
+
 .six {
   background-color: #fffee4;
   top: 280px;
   left: 120px;
   z-index: 4;
 }
+
 .seven {
   background-color: #deae70;
   top: 200px;
   left: 40px;
   z-index: 5;
 }
+
 .eight {
   background-color: #de70cf;
   top: 120px;
