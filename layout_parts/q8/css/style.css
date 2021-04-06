@@ -12,36 +12,37 @@
 }
 
 .trans_img,
-.trans_text {
+.trans_text_box {
   transition-duration: 0.5s;
   width: 100%;
 }
 
-.trans_text {
+.trans_text_box {
   position: absolute;
   top: 100%;
   left: 0;
   height: 100%;
-  color: #fff;
-  font-size: 16px;
-  line-height: 16px;
-  word-break: break-all;
-}
-
-.container:hover .trans_img {
-  transform: scale(1.5,1.5);
-}
-
-.container:hover .trans_text {
-  transform: translateY(-100%);
   background: linear-gradient(rgba(0, 0, 0, 0) 0%,rgba(0, 0, 0, 0.8) 100%);
 }
 
-.trans_text_p {
+.container:hover .trans_img {
+  transform: scale(1.5);
+}
+
+.container:hover .trans_text_box {
+  /* transform: translateY(-100%); ←top:0%で事足りるため不要*/
+  top: 0%;
+}
+
+.trans_text {
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 20px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  word-break: break-all;
 }
 
 .circle {
@@ -51,13 +52,16 @@
   border: 10px solid #ECF1F2;
   border-top-color: #00bcd4;
   margin: 0 auto;
-  /*liner→速度一定 */
   animation: loading 1s linear infinite;
 }
 
 @keyframes loading{
-  0%{ transform:rotate(0);}
-  100%{ transform:rotate(360deg); }
+  0% {
+    transform:rotate(0);
+  }
+  100% {
+    transform:rotate(360deg);
+  }
 }
 
 /* 回答はここに書いてね */
