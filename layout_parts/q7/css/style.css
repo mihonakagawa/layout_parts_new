@@ -30,11 +30,12 @@
 .table_element {
   display: table-cell;
   vertical-align: middle;
+  padding-left: 50px;
   /* width: 100%; ⇦last childにpaddingを追加する為不要*/
 }
 
-.table_element:last-child {
-  padding-left: 50px;
+.table_element:first-child {
+  padding-left: 0;
 }
 
 .inline-block_container {
